@@ -50,12 +50,14 @@ public IActionResult Index()
                 <h3>All Baseball Leagues</h3>
                 <table class="table table-striped">
                     <tr>
+                        <th>League Id</th>
                         <th>League Name</th>
                         <th>League Sport</th>
                     </tr>
                     @foreach(var l in ViewBag.BaseballLeagues)
                     {
                         <tr>
+                            <td>@l.LeagueId</td>
                             <td>@l.Name</td>
                             <td>@l.Sport</td>
                         </tr>
