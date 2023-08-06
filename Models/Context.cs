@@ -13,7 +13,7 @@ namespace SportsORM.Models
             => options.UseSqlite("Data Source=SportsORM.db");
 
 
-        // DBSet<Leagues/Teams/Players> directly connected to the DataController's static tables
+        // DBSet<Leagues/Teams/Players> directly connected to the DataController's static tables(tested while renaming one of the tables) - Not sure about PlayerTeam
         public DbSet<League> Leagues {get;set;}
         public DbSet<Team> Teams {get;set;}
         public DbSet<Player> Players {get;set;}
