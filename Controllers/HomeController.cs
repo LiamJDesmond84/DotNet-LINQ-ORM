@@ -31,6 +31,7 @@ namespace SportsORM.Controllers
         [HttpGet("level_1")]
         public IActionResult Level1()
         {
+            ViewBag.Leagues = _context.Leagues.ToArray();
             return View();
         }
 
