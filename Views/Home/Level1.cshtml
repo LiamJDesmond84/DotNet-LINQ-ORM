@@ -20,4 +20,26 @@
             <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
         </ol>
     </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h3>All Baseball Leagues</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Id</th>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var x in ViewBag.Leagues)
+                    {
+                        <tr>
+                            <td>@x.League</td>
+
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
