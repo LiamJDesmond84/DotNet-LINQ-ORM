@@ -31,7 +31,7 @@ namespace SportsORM.Controllers
         [HttpGet("level_1")]
         public IActionResult Level1()
         {
-            ViewBag.Leagues = _context.Leagues.ToArray();
+            ViewBag.Leagues = _context.Leagues.Where(x => x.Name.Contains("women")).ToList();
             return View();
         }
 
