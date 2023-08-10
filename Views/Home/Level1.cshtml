@@ -66,4 +66,27 @@
             </div>
         </div>
     </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h3>NOT FOOTBALL</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Id</th>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var x in ViewBag.NotFootball)
+                    {
+                        <tr>
+                            <td>@x.LeagueId</td>
+                            <td>@x.Name</td>
+                            <td>@x.Sport</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
