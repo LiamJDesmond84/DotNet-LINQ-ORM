@@ -41,9 +41,8 @@ namespace SportsORM.Controllers
             ViewBag.Raptors = _context.Teams.Where(x => x.TeamName.Contains("Raptors")).ToList();
             ViewBag.City = _context.Teams.Where(x => x.Location.Contains("City")).ToList();
             ViewBag.TStart = _context.Teams.Where(x => x.TeamName.StartsWith("T")).ToList();
-            ViewBag.Alpha = _context.Teams.ToList().OrderBy(x => x.TeamName);
-            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
-            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.AlphaLocation = _context.Teams.OrderBy(x => x.Location).ToList();
+            ViewBag.ReverseAlpha = _context.Teams.OrderByDescending(x => x.TeamName).ToList();
             return View();
         }
 
