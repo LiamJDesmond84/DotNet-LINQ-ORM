@@ -38,6 +38,12 @@ namespace SportsORM.Controllers
             ViewBag.Atlantic = _context.Leagues.Where(x => x.Name.Contains("Atlantic")).ToList();
 
             ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.Raptors = _context.Teams.Where(x => x.TeamName.Contains("Raptors")).ToList();
+            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+            ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
             return View();
         }
 
